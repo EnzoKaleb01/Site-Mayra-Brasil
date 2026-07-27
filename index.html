@@ -107,7 +107,7 @@
       radial-gradient(ellipse 60% 50% at 10% 90%, rgba(185,132,122,0.12), transparent 60%),
       var(--ink);
   }
-  .hero-grid{display:grid; grid-template-columns:1.05fr 0.85fr; gap:60px; align-items:center;}
+  .hero-grid{max-width:680px;}
   .eyebrow{
     display:flex; align-items:center; gap:12px; margin-bottom:22px;
     font-size:0.78rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold-soft);
@@ -137,22 +137,6 @@
     display:block; font-family:'Fraunces',serif; font-size:1.9rem; color:var(--gold-soft); font-weight:450;
   }
   .hero-stats div span{font-size:0.76rem; color:var(--bone-dim); letter-spacing:0.04em;}
-
-  /* signature lash-fan svg */
-  .lash-signature{position:relative; display:flex; align-items:center; justify-content:center;}
-  .lash-signature svg{width:100%; max-width:420px; height:auto;}
-  .lash-signature .frame-ring{
-    position:absolute; inset:0; border:1px solid var(--line); border-radius:50%;
-    transform:scale(1.32);
-  }
-  .lash-strand{
-    stroke:var(--gold-soft); stroke-width:2; fill:none; stroke-linecap:round;
-    stroke-dasharray:140; stroke-dashoffset:140;
-    animation:draw 1.6s cubic-bezier(.2,.7,.3,1) forwards;
-  }
-  @keyframes draw{to{stroke-dashoffset:0;}}
-  .lash-dot{fill:var(--gold); opacity:0; animation:fadeInDot .6s ease forwards;}
-  @keyframes fadeInDot{to{opacity:1;}}
 
   .marquee-strip{
     position:absolute; bottom:0; left:0; right:0; overflow:hidden;
@@ -376,25 +360,6 @@
         <div><b>4.9</b><span>Avaliação média</span></div>
         <div><b>7+</b><span>Anos de experiência</span></div>
       </div>
-    </div>
-    <div class="lash-signature">
-      <div class="frame-ring"></div>
-      <svg viewBox="0 0 400 260" fill="none">
-        <!-- eyelid line -->
-        <path class="lash-strand" style="animation-delay:.1s" d="M40 170 Q 200 230 360 150" stroke-width="2.4"/>
-        <!-- fanned lash strands -->
-        <path class="lash-strand" style="animation-delay:.3s" d="M70 165 C 60 120, 55 90, 45 60"/>
-        <path class="lash-strand" style="animation-delay:.4s" d="M105 172 C 98 118, 96 80, 90 45"/>
-        <path class="lash-strand" style="animation-delay:.5s" d="M145 180 C 140 120, 142 78, 138 38"/>
-        <path class="lash-strand" style="animation-delay:.6s" d="M188 186 C 188 122, 192 78, 194 34"/>
-        <path class="lash-strand" style="animation-delay:.7s" d="M232 184 C 236 122, 242 80, 250 38"/>
-        <path class="lash-strand" style="animation-delay:.8s" d="M272 176 C 280 118, 290 82, 302 46"/>
-        <path class="lash-strand" style="animation-delay:.9s" d="M308 165 C 320 112, 334 84, 350 58"/>
-        <path class="lash-strand" style="animation-delay:1s" d="M336 152 C 350 108, 365 88, 378 68"/>
-        <circle class="lash-dot" style="animation-delay:1.3s" cx="200" cy="205" r="3.5"/>
-        <circle class="lash-dot" style="animation-delay:1.4s" cx="130" cy="200" r="2.4"/>
-        <circle class="lash-dot" style="animation-delay:1.5s" cx="270" cy="196" r="2.4"/>
-      </svg>
     </div>
   </div>
   <div class="marquee-strip">
