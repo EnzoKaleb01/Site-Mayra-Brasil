@@ -271,6 +271,12 @@
   .field textarea{resize:vertical; min-height:90px;}
   form .btn{width:100%; justify-content:center; margin-top:6px; border:none;}
   .form-note{margin-top:16px; font-size:0.8rem; color:var(--bone-dim); text-align:center;}
+  .hours-notice{
+    display:flex; align-items:flex-start; gap:10px; margin:-6px 0 20px;
+    padding:14px 16px; border:1px solid var(--line); border-left:2px solid var(--gold);
+    background:rgba(198,154,91,0.06); font-size:0.82rem; color:var(--bone-dim); line-height:1.5;
+  }
+  .hours-notice .ic{color:var(--gold); font-size:0.9rem; margin-top:1px;}
   @media (max-width:860px){.booking-grid, .about-grid{grid-template-columns:1fr;} .form-row{grid-template-columns:1fr;}}
 
   /* ---------- MAP CARD ---------- */
@@ -387,8 +393,8 @@
   </div>
   <div class="marquee-strip">
     <div class="marquee-track">
-      <span>· VOLUME RUSSO</span> <span>· VOLUME BRASILEIRO</span> <span>· FIO A FIO</span> <span>· LASH LIFTING</span> <span>· DESIGN DE SOBRANCELHA</span> <span>· MICROPIGMENTAÇÃO</span>
-      <span>· VOLUME RUSSO</span> <span>· VOLUME BRASILEIRO</span> <span>· FIO A FIO</span> <span>· LASH LIFTING</span> <span>· DESIGN DE SOBRANCELHA</span> <span>· MICROPIGMENTAÇÃO</span>
+      <span>· DESIGN SIMPLES</span> <span>· DESIGN COM HENNA</span> <span>· BUÇO</span> <span>· BROW LAMINATION</span> <span>· LASH LIFTING</span> <span>· MICROPIGMENTAÇÃO</span> <span>· CÍLIOS BRASILEIRO</span> <span>· CÍLIOS 3D</span> <span>· CÍLIOS EGÍPCIO</span>
+      <span>· DESIGN SIMPLES</span> <span>· DESIGN COM HENNA</span> <span>· BUÇO</span> <span>· BROW LAMINATION</span> <span>· LASH LIFTING</span> <span>· MICROPIGMENTAÇÃO</span> <span>· CÍLIOS BRASILEIRO</span> <span>· CÍLIOS 3D</span> <span>· CÍLIOS EGÍPCIO</span>
     </div>
   </div>
 </section>
@@ -404,44 +410,65 @@
 
       <div class="service-card reveal">
         <div class="service-num">01</div>
-        <h3>Volume Russo</h3>
-        <p>Fios ultrafinos aplicados em leque, para um efeito cheio e escuro sem pesar na pálpebra.</p>
-        <div class="service-meta"><span>a partir de R$ 120</span><span>~2h30</span></div>
+        <h3>Design Simples</h3>
+        <p>Modelagem com pinça para alinhar e definir o formato natural da sobrancelha.</p>
+        <div class="service-meta"><span>R$ 20</span></div>
       </div>
 
       <div class="service-card reveal">
         <div class="service-num">02</div>
-        <h3>Volume Brasileiro</h3>
-        <p>Técnica híbrida entre fio a fio e volume, equilíbrio entre naturalidade e presença.</p>
-        <div class="service-meta"><span>a partir de R$ 100</span><span>~2h</span></div>
+        <h3>Design com Henna</h3>
+        <p>Design com aplicação de henna para preencher falhas e destacar o desenho.</p>
+        <div class="service-meta"><span>R$ 35</span></div>
       </div>
 
       <div class="service-card reveal">
         <div class="service-num">03</div>
-        <h3>Fio a Fio</h3>
-        <p>Um fio sintético por cílio natural. Resultado delicado, perfeito para o dia a dia.</p>
-        <div class="service-meta"><span>a partir de R$ 80</span><span>~1h30</span></div>
+        <h3>Buço</h3>
+        <p>Remoção completa dos pelos do buço, com acabamento limpo e preciso.</p>
+        <div class="service-meta"><span>R$ 10</span></div>
       </div>
 
       <div class="service-card reveal">
         <div class="service-num">04</div>
-        <h3>Lash Lifting</h3>
-        <p>Curvatura e alongamento do cílio natural com efeito rímel automático por até 6 semanas.</p>
-        <div class="service-meta"><span>a partir de R$ 90</span><span>~1h</span></div>
+        <h3>Brow Lamination</h3>
+        <p>Alinhamento dos fios da sobrancelha para um efeito laminado, cheio e uniforme.</p>
+        <div class="service-meta"><span>R$ 60</span></div>
       </div>
 
       <div class="service-card reveal">
         <div class="service-num">05</div>
-        <h3>Design de Sobrancelha</h3>
-        <p>Desenho sob medida com pinça, linha ou henna, respeitando a simetria natural do rosto.</p>
-        <div class="service-meta"><span>a partir de R$ 40</span><span>~40min</span></div>
+        <h3>Lash Lifting</h3>
+        <p>Curvatura e alongamento do cílio natural com efeito rímel automático por semanas.</p>
+        <div class="service-meta"><span>R$ 60</span></div>
       </div>
 
       <div class="service-card reveal">
         <div class="service-num">06</div>
-        <h3>Micropigmentação Esfumada</h3>
-        <p>Efeito pó esfumado que preenche falhas com aspecto natural, fio a fio ou sombreado.</p>
-        <div class="service-meta"><span>a partir de R$ 350</span><span>~2h</span></div>
+        <h3>Micropigmentação</h3>
+        <p>Técnica que preenche falhas na sobrancelha com resultado natural e duradouro.</p>
+        <div class="service-meta"><span>R$ 250</span></div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-num">07</div>
+        <h3>Cílios Brasileiro</h3>
+        <p>Técnica híbrida entre fio a fio e volume, equilíbrio entre naturalidade e presença.</p>
+        <div class="service-meta"><span>R$ 60</span></div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-num">08</div>
+        <h3>Cílios 3D</h3>
+        <p>Três fios finos aplicados por cílio natural, para um volume leve e uniforme.</p>
+        <div class="service-meta"><span>R$ 80</span></div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-num">09</div>
+        <h3>Cílios Egípcio</h3>
+        <p>Efeito alongado nos cantos externos, puxando e alongando o olhar.</p>
+        <div class="service-meta"><span>R$ 80</span></div>
       </div>
 
     </div>
@@ -618,12 +645,15 @@
         <label for="servico">Serviço</label>
         <select id="servico" required>
           <option value="" disabled selected>Escolha um serviço</option>
-          <option>Volume Russo</option>
-          <option>Volume Brasileiro</option>
-          <option>Fio a Fio</option>
+          <option>Design Simples</option>
+          <option>Design com Henna</option>
+          <option>Buço</option>
+          <option>Brow Lamination</option>
           <option>Lash Lifting</option>
-          <option>Design de Sobrancelha</option>
-          <option>Micropigmentação Esfumada</option>
+          <option>Micropigmentação</option>
+          <option>Cílios Brasileiro</option>
+          <option>Cílios 3D</option>
+          <option>Cílios Egípcio</option>
         </select>
       </div>
       <div class="form-row">
@@ -635,6 +665,10 @@
           <label for="hora">Horário preferido</label>
           <input type="time" id="hora" required>
         </div>
+      </div>
+      <div class="hours-notice">
+        <span class="ic">◍</span>
+        <span>Atendimento de terça a sábado, das 9h às 18h. Caso o horário escolhido não esteja disponível, entraremos em contato pelo WhatsApp para combinar um novo horário.</span>
       </div>
       <div class="field">
         <label for="obs">Observações</label>
