@@ -273,6 +273,29 @@
   .form-note{margin-top:16px; font-size:0.8rem; color:var(--bone-dim); text-align:center;}
   @media (max-width:860px){.booking-grid, .about-grid{grid-template-columns:1fr;} .form-row{grid-template-columns:1fr;}}
 
+  /* ---------- MAP CARD ---------- */
+  .map-card{
+    margin-top:70px; border:1px solid var(--line); background:var(--ink-deep); overflow:hidden;
+  }
+  .map-frame-wrap{position:relative; width:100%; padding-top:38%; background:#0c0806;}
+  @media (max-width:760px){ .map-frame-wrap{padding-top:75%;} }
+  .map-frame-wrap iframe{
+    position:absolute; inset:0; width:100%; height:100%; border:0; filter:grayscale(0.15) contrast(1.05);
+  }
+  .map-footer{
+    display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:18px;
+    padding:26px 30px;
+  }
+  .map-footer-text b{display:block; font-size:1rem; color:var(--bone); font-weight:600; margin-bottom:4px;}
+  .map-footer-text span{font-size:0.86rem; color:var(--bone-dim);}
+  .map-actions{display:flex; gap:12px; flex-wrap:wrap;}
+  .map-actions .btn{padding:13px 22px; font-size:0.76rem;}
+  @media (max-width:560px){
+    .map-footer{flex-direction:column; align-items:stretch;}
+    .map-actions{flex-direction:column;}
+    .map-actions .btn{width:100%; justify-content:center;}
+  }
+
   /* ---------- FOOTER ---------- */
   footer{background:var(--ink-deep); border-top:1px solid var(--line); padding:60px 0 30px;}
   .footer-grid{display:flex; justify-content:space-between; flex-wrap:wrap; gap:30px; padding-bottom:40px;}
@@ -620,6 +643,30 @@
       <button type="submit" class="btn btn-primary">Enviar pelo WhatsApp</button>
       <p class="form-note">Você será redirecionada ao WhatsApp com a mensagem já preenchida.</p>
     </form>
+  </div>
+
+  <div class="wrap">
+    <div class="map-card reveal">
+      <div class="map-frame-wrap">
+        <iframe
+          src="https://www.google.com/maps?q=Rua+Exemplo+123+Fortaleza+CE&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+          title="Localização — Espaço Mayara Brasil no Google Maps">
+        </iframe>
+      </div>
+      <div class="map-footer">
+        <div class="map-footer-text">
+          <b>Espaço Mayara Brasil</b>
+          <span>Rua Exemplo, 123 — Fortaleza, CE</span>
+        </div>
+        <div class="map-actions">
+          <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Rua+Exemplo+123+Fortaleza+CE" target="_blank" rel="noopener">Traçar rota</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Rua+Exemplo+123+Fortaleza+CE" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
